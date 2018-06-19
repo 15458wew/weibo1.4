@@ -21,7 +21,7 @@ class WeiboSpiderMiddleware(object):
 
 
     def get_cookies(self):
-        r=redis.Redis(host='localhost',port=6379)
+        r=redis.Redis(settings.REDIS_URL)
         f=r.keys()
         cookies=[]
         for i in f:
