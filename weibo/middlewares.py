@@ -40,9 +40,9 @@ class WeiboSpiderMiddleware(object):
 class ProxyMiddleware(object):
 
     def process_request(self, request, spider):
-        proxy_server = 'http://http-dyn.abuyun.com:9020'
-        proxy_user = 'HY14U6L8TSLR0IHD'
-        proxy_pass = '42538E56B98F3D63'
+        proxy_server = ''
+        proxy_user = ''
+        proxy_pass = ''
 
         proxy_auth = "Basic " + base64.urlsafe_b64encode(bytes((proxy_user + ":" + proxy_pass), "ascii")).decode("utf8")
         request.meta["proxy"] = proxy_server
