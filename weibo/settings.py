@@ -102,7 +102,7 @@ MONGO_DB='weibo'
 # REDIS_HOST = 'r-2zec10d55c9ead54.redis.rds.aliyuncs.com'
 # REDIS_PORT = '6379'
 # REDIS_AUTH = 'Passw0rd'
-REDIS_URL='redis://:Passw0rd@r-2zec10d55c9ead54.redis.rds.aliyuncs.com:6379'
+REDIS_URL=''
 
 # REDIS_URL='redis://:123456@localhost:6379'
 #
